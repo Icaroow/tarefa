@@ -1,0 +1,15 @@
+{% extends 'C:\Users\Ícaro\Documents\VS\todolist\tarefa\templates\index.html' %}
+
+{% block content %}
+
+<form action="" method="post">
+{% csrf_token %}
+
+    {{ form }}
+    
+    <input type="submit" value="Cadastrar" placeholder="Digite a tarefa">
+
+
+</table>
+
+{% endblock %}
