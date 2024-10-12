@@ -1,8 +1,8 @@
-{% extends '\index.html' %}
+{% extends './index.html' %}
 
 {% block content %}
+<div class="container">
     <h1>Lista de tarefas</h1>
-    
     <button type="button"><a href="{% url 'nova' %}">Nova Tarefa</a></button>
     <ul>
         {% if tarefas %}
@@ -15,5 +15,6 @@
             <p>Nenhum tarefa encontrada.</p>        
         {% endif %}
     </ul>
+</div>
 {% endblock %}
 </html>
